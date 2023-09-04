@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form construction</title>
+</head>
+<body>
+<form action="/action_page.php">
+<form action="" method="post">
+  <fieldset style="color: darkslateblue;" ><br>
+
+
+    <fieldset>
+    <legend><span style="color: darkblue;" ><b>PERSONAL DETAILS</b></span></legend><br>
+    <select id="de" name="de">
+           <option value="Choose"> Choose  </option>
+           <option value="mr">Mr</option>
+           <option value="ms"> Ms</option>
+           <option value="mrs">Mrs</option>
+           <option value=" not to say"></option>
+    </select>
+    <label for="fname">First Name :</label>
+       <input type="text" id="fname" name="fname" maxlength="25" size="25">
+    <label for="Mname">Middle Name :</label>
+       <input type="text" id="mname" name="mname" maxlength="25" size="25">
+    <label for="lname">Last Name :</label>
+       <input type="text" id="lname" name="lname" maxlength="25" size="25">
+    <label for="gender">Gender :</label>
+           <select id="gender" name="Gender">
+               <option value="choose"> Choose </option>
+               <option value="male"> Male  </option>
+               <option value="female">Female</option>
+               <option value="not to say"> Not interested to say</option>   
+           </select><br><br>
+    <label for="mnumber">Mobile :</label>
+           <select id="mnumber" name="mnumber" >
+               <option value="Afghanistan"> 93  </option>
+               <option value="Albania">355 </option>
+               <option value="Algeria"> 213</option>
+               <option value="American Samoa">  1-684 AS</option> 
+               <option value="India"> +91 </option>
+            </select>
+                  <input type="text" id="mnumber" name="mnumber" placeholder="xxx-xxx-xxxx"> 
+    <label for="wnumber">Whatsapp number :</label>
+        <input type="text" id="wnumber" name="wmumber" placeholder="xxx-xxx-xxxx"> 
+    <label for="dob"> Date  of Birth:</label>
+        <input type="date" name="dob" id="dob"><br><br>
+    <label for="country">Country :</label>
+        <select id="country" name="country">
+           <option value="choose">Choose</option>
+           <option value="Afghanistan"> Afghanistan  </option>
+           <option value="Albania">Albania</option>
+           <option value="Algeria"> Algeria</option>
+           <option value="American Samoa">American Samoa </option> 
+           <option value="India">India </option>
+        </select>
+
+    <label for="Dname">Designation:</label>
+        <select id="Dname" name="Dname">
+            <option value="choose">Choose</option>
+            <option value="choose">Student</option>
+            <option value="choose">Computer Scientist</option><option value="choose">freelancer</option>
+            <option value="choose">IT Professional</option>
+            <option value="choose">IT Professional</option>
+            <option value="choose">UX  Designer & UI Developer</option>
+            <option value="choose">SQL Developer</option>
+            <option value="choose">Web Designer</option>
+            <option value="choose">Web Developer</option>
+            <option value="choose"> Help Desk Worker/Desktop Support</option>
+            <option value="choose">Software Engineer</option>
+            <option value="choose"> Data Entry</option>
+            <option value="choose">  DevOps Engineer</option>
+            <option value="choose">omputer Programmer</option>
+            <option value="choose">Network Administrator</option>
+            <option value="choose">Information Security Analyst</option>
+            <option value="choose">Artificial Intelligence Engineer</option>
+            <option value="choose">Cloud Architect</option>
+            <option value="choose">IT Manager</option>
+        </select> 
+        <br><br>                      
+    </fieldset><br>
+
+
+    <fieldset>
+      <legend> <span style="color: darkblue;" ><b> COMMUNICATION DETAILS</b></legend><br>
+      <label for="fname"> Full Name</label>
+             <input type="text" name="fname" id="fname" maxlength="75" size="75"><br><br>
+      <label for="caddress"> Premenant Address</label><br>
+            <textarea rowa="5" cols="50"  name="description"></textarea><br><br>
+      <label for="mnumber">Mobile Number</label>
+             <input type="text" name="fname" id="fname" placeholder="xxx-xxx-xxxx">
+      <label for="anumber1">Alternate Number 1</label>
+             <input type="text" name="anumber1" id="anumber1"placeholder="xxx-xxx-xxxx">
+      <label for="anumber2">Alternate Number 2</label>
+             <input type="text" name="anumber2" id="anumber2" placeholder="xxx-xxx-xxxx">
+      <label for="wnumber">Whatsapp Number</label>
+             <input type="text" name="wnumber" id="wmumber" placeholder="xxx-xxx-xxxx"><br><br>
+      <label for="eml">Email</label>
+             <input type="text" name="eml" id="eml" placeholder="you@gmail.com">
+      <label for="aeml1">Alternate Email 1</label>
+             <input type="text" name="aeml1" id="aeml1" placeholder="you@gmail.com">
+      <label for="aeml2">Alternate Email 2</label>
+             <input type="text" name="aeml2" id="aeml2" placeholder="you@gmail.com"><br><br>
+      <label for="zipc">Post Code</label>
+             <input type="number" name="zipc" id="zipc" placeholder="7-digit code">
+      <label for="TCV">Village/Town/City</label>
+             <input type="text" name="TCV" id="TCV"><br><br>
+      <label for="dis">District</label>
+             <input type="text" name="dis" id="dis">
+      <label for="ste">State</label>
+             <input type="text" name="ste" id="ste"><br><br>
+    </fieldset><br>
+
+
+    <fieldset >
+      <legend><span style="color:darkblue;"><b>CONFIRMATION </b></span></legend><br>
+      <label for="nma" >Name</label>
+             <input type="text" name="nma" id="nma" maxlength="75" size="75">
+      <label for=" num"> Mobile Number</label>
+             <input type="number" name="num" id="num" placeholder=" xxx-xxx-xxxx">
+      <label for="eml">Email</label>
+             <input type="text" name="eml" id="eml" placeholder="you@gmail.com"><br><br>
+      <label for="dob"> Date  of Birth:</label>
+             <input type="date" name="dob" id="dob" placeholder="dd-mm-yyyy">
+       <label for="aeml1">Alternate Email 1</label>
+             <input type="text" name="aeml1" id="aeml1" placeholder="you@gmail.com">
+      <label for="aeml2">Alternate Email 2</label>
+             <input type="text" name="aeml2" id="aeml2" placeholder="you@gmail.com"><br><br>
+      <label for="zipc">Post Code</label>
+             <input type="number" name="zipc" id="zipc" placeholder="7-digit code">
+      <label for="TCV">Village/Town/City</label>
+             <input type="text" name="TCV" id="TCV"><br><br>
+      <label for="dis">District</label>
+             <input type="text" name="dis" id="dis">
+      <label for="ste">State</label>
+             <input type="text" name="ste" id="ste"><br><br>
+      <h4><span style=" color: darkviolet;">PASSWORD </span></h4> 
+        <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" pattern="[a-zA-Z0-9][!@#$%^&*()<>0-9][a-zA-Z]{1,5}" title=" Must contain an UPPERCASE, a lowercase, numbers, alphabets, punctuations"> 
+       
+         <h4> <span style=" color: darkolivegreen;">BOOKING</span></h4>
+            <input type="radio" name="got"value="got"><span style="color: darkblue;">Gateway/Section/Ticket 1</span>
+            <input type="radio" name="got"value="got"><span style="color: darkslateblue;">Gateway/Section/Ticket 2</span>
+            <input type="radio" name="got"value="got"><span style="color: darkgoldenrod;">Gateway/Section/Ticket 3</span><br><br>
+        <label for="doeb">Date of Booking</label>
+            <input type="date" name="doeb" id="doeb">
+            <input type="time" name="ti" id="ti"> 
+            <input type="week" name="wk" id="wk"> <br><br>
+        <label for="addtt">Additional Tickets</label>
+          <input type="number" name="addtt" id="addtt" max="100">
+   </fieldset><br>
+
+    <fieldset>
+      <legend><span style="color: darkgreen;"><b>DECLARATION</b></span></legend>
+          <input type="checkbox" name="outh" id="outh">
+              <b style="color: darkblue;"><i><u >"I hereby declare that the details and information given above are complete and true to the best of my knowledge. IF any of the information finds not standing correctly the resigstration will automatically cancelled."</u> </b></i>
+    </fieldset><br><br>
+
+    <fieldset style="color:darkmagenta;">
+      <legend><span style="color: darkslateblue;"><b>PAYMENT DETAILS</span></legend>  
+            <input type="checkbox" name="pay" id="pay" value="pay"><span style="color: darkslategrey;">Online</span>
+            <input type="checkbox" name="pay" id="pay" value="pay"><span style="color: darkslategrey;">Offline</span>
+            <input type="checkbox" name="pay" id="pay" value="pay"><span style="color: darkslategrey;">Check/DD</span><br><br>
+        <label for="paygate">Payment GateWay</label>
+            <input type="radio" name="o"><span style="color: seagreen;">VISA</span>
+            <input type="radio" name="n"><select><option value="ii">Credit<option>Debit</option></option></select><span style="color: seagreen;">Card</span>
+            <input type="radio" name="e"><span style="color: seagreen;">UPI</span>
+            <select id="UPI" name="UPI">
+              <option value="1">Google pay</option>
+              <option value="1">Phone Pe</option>
+              <option value="1">Amazon Pay</option>
+              <option value="1">Paytm</option>
+            </select>
+            <input type="radio" name="on">Net Banking
+    </fieldset><br>
+    
+ <button type="button" onclick="alert('Please Check all the data are correct')">click here</button>
+  <input type="submit" value="Submit"><br><br>
+  
+
+</fieldset>
+</form></form>
+</body>
+</html>

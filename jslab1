@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEST1JS</title>
+</head>
+<body>
+
+      <h2> TEST 1 JS CALCULATOR BASE MODEL</h2>
+      <input type="number" id="f12" placeholder="Input A">
+      <select id="oper">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+              <option value="%">%</option>
+              <option value="<"><</option>
+              <option value=">">></option>
+      </select>
+      <input type="number" id="f22" placeholder="Input B">
+      <button onclick="output()">=</button>
+      <input type="text" id="out" >
+
+      <script>
+              function output() {
+                var num = parseInt(document.getElementById('f12').value);
+                var num1 = parseInt(document.getElementById('f22').value);
+                var cyber = document.getElementById('oper').value;
+
+                                        switch (cyber) {
+                                                            
+                                                            case '+':
+                                                                    document.getElementById('out').value = num + num1;
+                                                                    break;
+
+                                                            case '-':
+                                                                    document.getElementById('out').value = num - num1;
+                                                                    break;
+
+                                                            case '*':
+                                                                    document.getElementById('out').value = num * num1;
+                                                                    break;
+
+                                                            case '/':
+                                                                      if (num1 == 0) {
+                                                                                        document.getElementById('out').value = 'no end';
+                                                                                      } 
+                                                                      else {
+                                                                              document.getElementById('out').value =num / num1 ;
+                                                                            }
+                                                                      break;
+
+                                                            case'<':
+                                                                      if (num1 > num) {
+                                                                                        document.getElementById('out').value = 1;
+                                                                                      } 
+                                                                      else {
+                                                                              document.getElementById('out').value =0 ;
+                                                                            }
+                                                                      break;
+
+                                                             case'>':
+                                                                      if (num1 < num) {
+                                                                                        document.getElementById('out').value = 1;
+                                                                                      } 
+                                                                      else {
+                                                                              document.getElementById('out').value =0 ;
+                                                                            }
+                                                                      break;
+
+
+                                                            default:
+                                                                    document.getElementById('out').value = 'lalalaala';
+                                                                    break;
+
+                                                          }
+                                      }
+                                
+      </script>
+
+</body>
+</html>
